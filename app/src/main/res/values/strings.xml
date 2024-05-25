@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CameraSmart</string>
+    <string name="qrcode_image_description"><![CDATA[https://avatars.githubusercontent.com/u/122676967?s=16&v=4]]></string>
+    <string name="video_playback">video playback</string>
+    <string name="user_id">User ID</string>
+    <string name="user_name">User Name</string>
+    <string name="stop">stop</string>
+    <string name="resume">resume</string>
+    <string name="pause">pause</string>
+    <string name="query">query</string>
+    <string name="playback_input_hint">playback_input_hint</string>
+    <string name="playback_title">playback_title</string>
+    <string name="ebdc75aeffca95cc69pmt7">ebdc75aeffca95cc69pmt7</string>
+    <string name="record">record</string>
+</resources>

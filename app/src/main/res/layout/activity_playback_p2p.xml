@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- ListView added here -->
+    <RelativeLayout
+        android:id="@+id/camera_video_view_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_height="250dp"
+        tools:ignore="MissingConstraints">
+
+            <com.thingclips.smart.camera.middleware.widget.ThingCameraView
+                android:id="@+id/camera_video_view"
+                android:layout_width="match_parent"
+                android:layout_height="207dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp">
+
+            </com.thingclips.smart.camera.middleware.widget.ThingCameraView>
+
+        <TextView
+            android:id="@+id/record_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="14dp"
+            android:layout_alignRight="@id/camera_video_view"
+            android:layout_below="@id/camera_video_view"
+            android:text="@string/record"
+            android:textColor="#000" />
+    </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/camera_video_view_Rl" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/camera_video_view_Rl">
+
+                <TextView
+                    android:id="@+id/start_time"
+                    android:layout_width="116dp"
+                    android:layout_height="50dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/end_time"
+                    android:layout_width="116dp"
+                    android:layout_height="50dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/steam_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Xem video"
+                    android:textColor="#fff"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
